@@ -12,6 +12,7 @@
   <div class="brand"><img class="logo-img" src="assets/logo.png" alt="Infozillion Teletech BD"></div>
   <div class="hubtag">OpsHub</div>
   <nav id="nav">
+<a class="nav on" href="#dash" data-sec="dash"><span class="ic">D</span><span class="lb">Dashboard</span></a>
 <a class="nav" href="#sec-0" data-sec="sec-0"><span class="ic">1</span><span class="lb">Shift And Activities</span></a>
 <a class="nav" href="#sec-1" data-sec="sec-1"><span class="ic">2</span><span class="lb">Contact</span></a>
 <a class="nav" href="#sec-2" data-sec="sec-2"><span class="ic">3</span><span class="lb">Error Code Solution</span><span class="ct">36</span></a>
@@ -35,18 +36,30 @@
     <div class="search"><input id="q" type="search" placeholder="Search error codes, replies, emails…" autocomplete="off"><kbd>/</kbd></div>
   </div>
   <div class="wrap">
-    <div class="hero">
-      <span class="badge">INTERNAL USE ONLY · VERSION 2.3</span>
-      <h1><em>MNPSP FAQ</em></h1>
-      <p class="sub">What is the Appropriate Way to Respond?</p>
-      <p class="desc">This guide outlines the appropriate tone, structure, and escalation path for handling MNPSP-related queries.</p>
-      <div class="info"><div><span>Last Updated</span><strong>2026-10-13</strong></div><div><span>Prepared By</span><strong>Najmaz Sakib · Senior Engineer</strong></div><div><span>Additional Queries</span><strong>MD. Asifur Rahman · Chief Operations Officer</strong></div><div><span>Email</span><strong>asif@infotelebd.com</strong></div></div>
-    </div>
-    <div class="stats">
-      <div class="stat"><span>Sections</span><b>13</b></div>
-      <div class="stat"><span>Entries</span><b>90</b></div>
-      <div class="stat"><span>Last Updated</span><b>2026-10-13</b></div>
-    </div>
+    <section class="sec show" id="dash" data-name="Dashboard">
+      <div class="hero">
+        <div class="hero-top"><div class="pills"><span class="live">● Hub Active</span><span class="team">Service Assurance</span></div><div class="chips"><span class="chip" id="today"></span><span class="chip sh" id="shiftchip"></span></div></div>
+        <span class="badge">INTERNAL USE ONLY · VERSION 2.3</span>
+        <h1 id="greet">Hello, <em>Team</em>!</h1>
+        <p class="sub"><strong>MNPSP FAQ</strong> · What is the Appropriate Way to Respond?</p>
+        <p class="desc">This guide outlines the appropriate tone, structure, and escalation path for handling MNPSP-related queries.</p>
+      </div>
+      <h3 class="ovh">Overview</h3>
+      <div class="stats">
+        <div class="stat"><span>Current Time</span><b id="clock">--:--:--</b><small id="shiftrange"></small></div>
+        <div class="stat"><span>Sections</span><b>13</b><small>FAQ categories</small></div>
+        <div class="stat"><span>Entries</span><b>90</b><small>Searchable entries</small></div>
+        <div class="stat"><span>Last Viewed</span><b id="lastsec">—</b><small id="lastnote">No activity yet</small></div>
+      </div>
+      <div class="dgrid">
+        <div class="card dcard"><div class="dh"><b>Quick Navigation</b><small>All sections · press 1–9 to jump</small></div><div class="qgrid"><a class="qn" href="#sec-0" data-go="1"><span class="num">1</span><div><b>Shift And Activities</b><small>Reference</small></div><i>→</i></a><a class="qn" href="#sec-1" data-go="2"><span class="num">2</span><div><b>Contact</b><small>Reference</small></div><i>→</i></a><a class="qn" href="#sec-2" data-go="3"><span class="num">3</span><div><b>Error Code Solution</b><small>36 entries</small></div><i>→</i></a><a class="qn" href="#sec-3" data-go="4"><span class="num">4</span><div><b>Others</b><small>24 entries</small></div><i>→</i></a><a class="qn" href="#sec-4" data-go="5"><span class="num">5</span><div><b>Helpdesk Ticket</b><small>5 entries</small></div><i>→</i></a><a class="qn" href="#sec-5" data-go="6"><span class="num">6</span><div><b>Email</b><small>11 entries</small></div><i>→</i></a><a class="qn" href="#sec-6" data-go="7"><span class="num">7</span><div><b>Maintenance Email</b><small>11 entries</small></div><i>→</i></a><a class="qn" href="#sec-7" data-go="8"><span class="num">8</span><div><b>Status: Critical</b><small>Reference</small></div><i>→</i></a><a class="qn" href="#sec-8" data-go="9"><span class="num">9</span><div><b>Log Path</b><small>Reference</small></div><i>→</i></a><a class="qn" href="#sec-9" data-go="10"><span class="num">10</span><div><b>Important Files</b><small>Reference</small></div><i>→</i></a><a class="qn" href="#sec-10" data-go="11"><span class="num">11</span><div><b>Important Sites</b><small>Reference</small></div><i>→</i></a><a class="qn" href="#sec-11" data-go="12"><span class="num">12</span><div><b>Important Notes</b><small>3 entries</small></div><i>→</i></a><a class="qn" href="#sec-12" data-go="13"><span class="num">13</span><div><b>Postman</b><small>Reference</small></div><i>→</i></a></div></div>
+        <div class="card dcard"><div class="dh"><b>Document &amp; Hub</b><small>Current document details</small></div>
+          <div class="kv"><div><span>Document</span><strong>MNPSP FAQ</strong></div><div><span>Version</span><strong>2.3</strong></div><div><span>Last Updated</span><strong>2026-10-13</strong></div><div><span>Prepared By</span><strong>Najmaz Sakib · Senior Engineer</strong></div><div><span>Additional Queries</span><strong>MD. Asifur Rahman · Chief Operations Officer</strong></div><div><span>Email</span><strong>asif@infotelebd.com</strong></div><div><span>Organization</span><strong>Infozillion Teletech BD</strong></div><div><span>Data processing</span><strong class="okc">✓ In-browser</strong></div></div>
+          <button class="btn wide" id="ksb">Keyboard Shortcuts</button>
+          <div class="ks" id="ks" hidden><div><kbd>/</kbd> Search</div><div><kbd>Esc</kbd> Clear search</div><div><kbd>0</kbd> Dashboard</div><div><kbd>1</kbd>–<kbd>9</kbd> Jump to section</div></div>
+        </div>
+      </div>
+    </section>
     <div class="tools"><span class="rs" id="rs"></span><button class="btn" id="ex">Expand all</button><button class="btn" id="co">Collapse all</button></div>
 <section class="sec" data-name="SHIFT AND ACTIVITIES" id="sec-0"><div class="sec-head"><h2>SHIFT AND ACTIVITIES</h2></div><article class="card plain open"><div class="card-body"><p><strong>Shift:</strong></p><ul>
 <li>The General shift starts from 10:00 AM to 6:00 PM.<br/>
